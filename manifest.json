@@ -1,0 +1,19 @@
+{
+  "name": "ID Hasher",
+  "description": "Torre's hashing function",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "webNavigation"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "/images/torre_marktype.png"
+  },
+  "icons": {
+    "16": "/images/torre_marktype.png",
+    "48": "/images/torre_marktype.png",
+    "128": "/images/torre_marktype.png"
+  }
+}

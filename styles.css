@@ -1,0 +1,44 @@
+:root {
+  --green: #CDDC39;
+  --dark: #27292d;
+  --light: rgba(255,255,255,.9);
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+
+body{
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "Muli", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 14px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+input{
+  background-color: var(--dark);
+  font-size: 16px;
+  color: var(--light);
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  border: 2px solid var(--green);
+  border-radius: 4px;
+}
+
+.section{
+  margin: 5px 0;
+}
+
+.title{
+  font-size: 12px;
+  color: var(--green);
+}
+
+.display {
+  width: 100%;
+  margin: 8px;
+}
