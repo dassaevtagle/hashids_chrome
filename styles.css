@@ -38,7 +38,26 @@ input{
   color: var(--green);
 }
 
+.clipboard{
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+}
+
+.copy:hover {
+  cursor: pointer;
+}
 .display {
   width: 100%;
-  margin: 8px;
+  padding: 4px;
+}
+
+.copied {
+  font-size: 13px;
+  color: rgba(255,255,255,.75);
+  display: none;
+}
+
+.active {
+  display: block !important;
 }

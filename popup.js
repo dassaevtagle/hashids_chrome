@@ -35,5 +35,23 @@ function decode () {
   chrome.storage.sync.set({ decodeDisplay, decodePlaceholder });
 }
 
+function copy (element) {
+  switch(element) {
+    case "encode":
+      navigator.clipboard.writeText(encodeResult.textContent);
+      copiedEncode.classList.add("active")
+      setTimeout(() => copiedEncode.classList.remove("active"), 2500)
+      break;
+    case "decode":
+      navigator.clipboard.writeText(decodeResult.textContent);
+      copiedDecode.classList.add("active")
+      setTimeout(() => copiedDecode.classList.remove("active"), 2500)
+      break;
+  }
+}
+
+clipboardEncode.addEventListener("click", () => copy("encode"))
+clipboardDecode.addEventListener("click", () => copy("decode"))
+
 encodeInput.addEventListener("keyup", debounce(encode, 1500))
 decodeInput.addEventListener("keyup", debounce(decode, 1500))
